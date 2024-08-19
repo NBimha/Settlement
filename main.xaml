@@ -1,0 +1,640 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1088,8724" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="57">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
+      <x:String>UiPath.Mail.Exchange</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Core.Activities.DateModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="1098.4,8659.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="rbzSettlementFile" />
+      <Variable x:TypeArguments="x:String" Name="rbzNettSettlement" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtRbzSettlement" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtRbzNettSettlementreg" />
+      <Variable x:TypeArguments="x:String" Name="summaryAmount" />
+      <Variable x:TypeArguments="x:String" Name="fileCount" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtRbzNettSettlementregFinal" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="rbzPDF" />
+      <Variable x:TypeArguments="x:String" Name="rbzZswPdf" />
+      <Variable x:TypeArguments="x:String" Name="summaryValues" />
+      <Variable x:TypeArguments="x:String" Name="variable2" />
+      <Variable x:TypeArguments="x:String" Name="selectCsv" />
+      <Variable x:TypeArguments="s:String[]" Name="csvFile" />
+      <Variable x:TypeArguments="x:String" Name="dtCsv" />
+      <Variable x:TypeArguments="x:String" Name="variable3" />
+      <Variable x:TypeArguments="s:String[]" Name="pathInfo" />
+      <Variable x:TypeArguments="x:String" Name="emailBody" />
+      <Variable x:TypeArguments="x:String" Name="emailRecipients" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtCheckSheet" />
+      <Variable x:TypeArguments="sd:DataRow" Name="drRow" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtCheckSheetFinal" />
+      <Variable x:TypeArguments="s:String[]" Name="checkSheet" />
+      <Variable x:TypeArguments="sd:DataTable" Name="FilteredDifferences" />
+      <Variable x:TypeArguments="x:String" Name="current_day" />
+      <Variable x:TypeArguments="x:String" Name="current_time" />
+      <Variable x:TypeArguments="x:String" Name="emailCC" />
+      <Variable x:TypeArguments="x:String" Name="PwD" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CreateDirectory Output="{x:Null}" ContinueOnError="True" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1036,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;C:\RPA\&quot;+&quot;MIS&quot;]" />
+    <ui:CreateDirectory Output="{x:Null}" ContinueOnError="True" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1036,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)]" />
+    <ui:CreateDirectory Output="{x:Null}" ContinueOnError="True" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1036,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;MMMM&quot;)]" />
+    <ui:CreateDirectory Output="{x:Null}" ContinueOnError="True" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1036,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy-MM-dd&quot;)]" />
+    <Sequence sap2010:Annotation.AnnotationText="get files from shared folder: with the dates: copy to local folder: for each ofthe four files&#xA;" sap:VirtualizedContainerService.HintSize="1036,445.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="C:\Users\truzane\Documents\2022-03-23" Name="filePath_To" />
+        <Variable x:TypeArguments="s:String[]" Name="pathInfo" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_36">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[pathInfo]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\RPA\MIIS\"+DateTime.Today.AddDays(-1).ToString("yyyy")+"\"+DateTime.Today.AddDays(-1).ToString("MM")+"\"+DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd"),"RBZZIMSWITCH"+"*")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy-MM-dd&quot;)]" DisplayName=" copy file CSV" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[pathInfo(0)]" />
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="1036,385.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_37">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[pathInfo]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\RPA\MIIS\"+DateTime.Today.AddDays(-1).ToString("yyyy")+"\"+DateTime.Today.AddDays(-1).ToString("MM")+"\"+DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd"),"*"+"- RBZNettSettlement.xls")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy-MM-dd&quot;)]" DisplayName="Copy File EXECEL REGISTER" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[pathInfo(0)]" />
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="1036,385.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="C:\Users\tchitsva\Desktop\2022-03-20" Name="filePath_To" />
+        <Variable x:TypeArguments="x:String" Default="C:\Users\tchitsva\Desktop\MIS\ZIMSWITCH\2022\03\2022-03-20" Name="filePath_From" />
+        <Variable x:TypeArguments="s:String[]" Name="pathInfo" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_38">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[pathInfo]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\RPA\MIIS\"+DateTime.Today.AddDays(-1).ToString("yyyy")+"\"+DateTime.Today.AddDays(-1).ToString("MM")+"\"+DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd"),"*"+"- RBZNettSettlement.pdf")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy-MM-dd&quot;)]" DisplayName="Copy File RBZ PDF" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="CopyFile_3" Overwrite="True" Path="[pathInfo(0)]" />
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="1036,953.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="filePath_To" />
+        <Variable x:TypeArguments="x:String" Name="filePath_From" />
+        <Variable x:TypeArguments="s:String[]" Name="pathInfo" />
+        <Variable x:TypeArguments="s:String[]" Name="settlementFiles" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_39">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[pathInfo]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\RPA\MIIS\"+DateTime.Today.AddDays(-1).ToString("yyyy")+"\"+DateTime.Today.AddDays(-1).ToString("MM")+"\"+DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd"),"*"+"- NettSettlementZsw.pdf")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\RPA\MIS\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;MMMM&quot;)+&quot;\&quot;+DateTime.Today.AddDays(-1).ToString(&quot;yyyy-MM-dd&quot;)]" DisplayName="Copy File  ZSW PDF" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="CopyFile_4" Overwrite="True" Path="[pathInfo(0)]" />
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_40">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[settlementFiles]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\RPA\MIS\"+DateTime.Today.AddDays(-1).ToString("yyyy")+"\"+DateTime.Today.AddDays(-1).ToString("MMMM")+"\"+DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd"))]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_41">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[rbzSettlementFile]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[settlementFiles(0)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_42">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[rbzZswPdf]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[settlementFiles(1)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_43">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[rbzPDF]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[settlementFiles(2)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_44">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[rbzNettSettlement]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[settlementFiles(3)]</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <ui:ReadCsvFile sap2010:Annotation.AnnotationText="" DataTable="[dtRbzSettlement]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[rbzSettlementFile]" sap:VirtualizedContainerService.HintSize="1036,186.4" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" IncludeColumnNames="False">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadCsvFile>
+    <ui:ReadRange AddHeaders="False" DataTable="[dtRbzNettSettlementreg]" DisplayName="Read Range   excel register" sap:VirtualizedContainerService.HintSize="1036,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="D8&#xA;" SheetName="sheet1" WorkbookPath="[rbzNettSettlement]" />
+    <Assign sap2010:Annotation.AnnotationText="COPY SUMMARY AMOUNT IN 3RD CELL LAST ROW" sap:VirtualizedContainerService.HintSize="1036,112.8" sap2010:WorkflowViewState.IdRef="Assign_45">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[summaryAmount]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[dtRbzSettlement(dtRbzSettlement.Rows.Count-1)(2).ToString]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap2010:Annotation.AnnotationText="COUNT NUMBER OF ROWS" sap:VirtualizedContainerService.HintSize="1036,112.8" sap2010:WorkflowViewState.IdRef="Assign_46">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[fileCount]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[dtRbzSettlement(dtRbzSettlement.Rows.Count-1)(1).ToString]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <Assign sap2010:Annotation.AnnotationText="COPY SUMMARY, COUNT AND AMOUNT" sap:VirtualizedContainerService.HintSize="1036,112.8" sap2010:WorkflowViewState.IdRef="Assign_47">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[summaryValues]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">["Summary    "+ fileCount + "    "+ decimal.Parse(summaryAmount, System.Globalization.NumberStyles.Float).ToString]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:RemoveDataRow Row="{x:Null}" sap2010:Annotation.AnnotationText="DELETE SUMMARY" DataTable="[dtRbzSettlement]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="1036,219.2" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" RowIndex="[dtRbzSettlement. RowCount-1]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RemoveDataRow>
+    <ui:WriteCsvFile AddHeaders="False" DataTable="[dtRbzSettlement]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[rbzSettlementFile]" sap:VirtualizedContainerService.HintSize="1036,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+    <ui:FilterDataTable DataTable="[dtRbzNettSettlementreg]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="1036,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtRbzNettSettlementregFinal]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Column0"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">[""]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument BooleanOperator="Or" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Column11"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">[""]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Column0"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="Or" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Column11"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <InArgument x:TypeArguments="x:String">["Column11"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["Column0"]</InArgument>
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtRbzSettlement]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1036,638.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,521.6" sap2010:WorkflowViewState.IdRef="Sequence_29">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WriteCell Cell="[&quot;A&quot;+(1+dtRbzSettlement.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="CSV Check Sheet" Text="[CurrentRow(0).ToString]" WorkbookPath="C:\RPA\checksheet\Settlement Checksheet.xls" />
+            <ui:WriteCell Cell="[&quot;B&quot;+(1+dtRbzSettlement.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="CSV Check Sheet" Text="[CurrentRow(1).ToString]" WorkbookPath="C:\RPA\checksheet\Settlement Checksheet.xls" />
+            <ui:WriteCell Cell="[&quot;C&quot;+(1+dtRbzSettlement.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="CSV Check Sheet" Text="[&quot;=&quot;&amp;CurrentRow(2).ToString]" WorkbookPath="C:\RPA\checksheet\Settlement Checksheet.xls" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtRbzNettSettlementregFinal]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1036,342.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="Sequence_30">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WriteCell Cell="[&quot;M&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_4" SheetName="CSV Check Sheet" Text="[&quot;=&quot;&amp;CurrentRow(0).ToString]" WorkbookPath="C:\RPA\checksheet\Settlement Checksheet.xls" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:BuildDataTable DataTable="[dtCheckSheet]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1036,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Difference&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1036,1432" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\RPA\checksheet\Settlement Checksheet.xls">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1322.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="ACL" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtRbzNettSettlementregFinal]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,1212.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1096.8" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Double" Name="diff" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ExcelWriteCell Cell="[&quot;F&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="CSV Check Sheet" Text="[&quot;=SUMIF(A1:A500,&quot;&quot;&quot;+CurrentRow(1).ToString+&quot;&quot;&quot;,C1:C500)&quot;]" />
+                    <ui:ExcelWriteCell Cell="[&quot;H&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="CSV Check Sheet" Text="[&quot;=SUMIF(B1:B500,&quot;&quot;&quot;+CurrentRow(1).ToString+&quot;&quot;&quot;,C1:C500)&quot;]" />
+                    <ui:ExcelWriteCell Cell="[&quot;J&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="CSV Check Sheet" Text="[&quot;=H&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString+&quot;-F&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString+&quot;&quot;]" />
+                    <ui:ExcelWriteCell Cell="[&quot;N&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="CSV Check Sheet" Text="[&quot;=+J&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString+&quot;-M&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString+&quot;&quot;]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_48">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="sd:DataRow">[drRow]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="sd:DataRow">[dtCheckSheet.NewRow]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ExcelReadCell Cell="[&quot;N&quot;+(1+dtRbzNettSettlementregFinal.Rows.IndexOf(CurrentRow)).ToString]" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="CSV Check Sheet">
+                      <ui:ExcelReadCell.Result>
+                        <OutArgument x:TypeArguments="x:Double">[diff]</OutArgument>
+                      </ui:ExcelReadCell.Result>
+                    </ui:ExcelReadCell>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_49">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[drRow("Difference")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[diff]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AddDataRow ArrayRow="{x:Null}" DataRow="[drRow]" DataTable="[dtCheckSheet]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <ui:FilterDataTable DataTable="[dtCheckSheet]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="1036,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dtCheckSheetFinal]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Difference"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["E"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+          <ui:FilterOperationArgument BooleanOperator="Or" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Difference"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["0"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <InArgument x:TypeArguments="x:String">["Difference"]</InArgument>
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <Assign sap:VirtualizedContainerService.HintSize="1036,81.6" sap2010:WorkflowViewState.IdRef="Assign_50">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[checkSheet]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\RPA\checksheet")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="1036,81.6" sap2010:WorkflowViewState.IdRef="Assign_51">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[emailBody]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="1036,81.6" sap2010:WorkflowViewState.IdRef="Assign_52">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[emailRecipients]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="1036,81.6" sap2010:WorkflowViewState.IdRef="Assign_53">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[emailCC]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[dtCheckSheetFinal.Rows.Count&gt;0]" sap:VirtualizedContainerService.HintSize="1036,622.4" sap2010:WorkflowViewState.IdRef="If_4">
+      <If.Then>
+        <Sequence sap2010:Annotation.AnnotationText="differences&#xA;" sap:VirtualizedContainerService.HintSize="496,462.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_54">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[emailBody]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">["Good day Please find attached settlement files for "+ DateTime.Now.AddDays(-1).ToString("dd-MM-yy") +" "+"Take note the settlement verification process was not completed sucessfully" +"Verified By Settlement Roberta"]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_55">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[emailRecipients]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">nbimha@zimswitch.co.zw</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_56">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[emailCC]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">nbimha@zimswitch.co.zw</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap2010:Annotation.AnnotationText="No differences" sap:VirtualizedContainerService.HintSize="496,449.6" sap2010:WorkflowViewState.IdRef="Sequence_34">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_57">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[emailBody]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String" xml:space="preserve">["Good day Please find attached settlement files for "+ DateTime.Now.AddDays(-1).ToString("dd-MM-yy")  +summaryValues +"verified By Settlement Roberta"]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_58">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[emailRecipients]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">nbimha@zimswitch.co.zw</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_59">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[emailCC]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">nbimha@zimswitch.co.zw</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[emailBody]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="1036,148.8" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[&quot;Settlement for &quot;+ DateTime.Now.AddDays(-1).ToString(&quot;dd-MM-yy&quot;)]" To="[emailRecipients]">
+      <ui:SendOutlookMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="8">
+          <InArgument x:TypeArguments="x:String">[rbzNettSettlement]</InArgument>
+          <InArgument x:TypeArguments="x:String">[rbzSettlementFile]</InArgument>
+          <InArgument x:TypeArguments="x:String">[rbzPDF]</InArgument>
+          <InArgument x:TypeArguments="x:String">[rbzZswPdf]</InArgument>
+          <InArgument x:TypeArguments="x:String">[checkSheet(0)]</InArgument>
+        </scg:List>
+      </ui:SendOutlookMail.Files>
+    </ui:SendOutlookMail>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1036,307.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="C:\RPA\checksheet\Settlement Checksheet.xls">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="Sequence_35">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteCell Cell="A1:A500, B1:B500,C1:C500,M1:M500" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="CSV Check Sheet">
+              <ui:ExcelWriteCell.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelWriteCell.Text>
+            </ui:ExcelWriteCell>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>
